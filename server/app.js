@@ -15,9 +15,14 @@ app.use(express.json());
 
 
 const authRoutes = require("./routes/authRoutes");
+const loginRoutes = require("./routes/loginRoutes");
+const signupRoutes = require("./routes/signupRoutes");
+const interviewRoutes=require("./routes/interview")
 
 app.use("/api/auth", authRoutes);
-
+app.use("/api/auth/login", loginRoutes);
+app.use("/api/auth/signup", signupRoutes);
+app.use("/api/auth", interviewRoutes);
 
 app.get("/", (req, res) => {
   res.send("Server is running");

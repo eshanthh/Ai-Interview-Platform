@@ -32,6 +32,23 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.auth-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.auth-nav a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-nav a:hover {
+  text-decoration: underline;
+}
+
 .login-card h1 {
   margin-bottom: 10px;
 }
@@ -40,4 +57,35 @@ body {
   margin-bottom: 30px;
 
   color: #666;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form input,
+.auth-form button {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font: inherit;
+  padding: 12px;
+}
+
+.auth-form button {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-form button:hover {
+  background: #1d4ed8;
+}
+
+.auth-divider {
+  color: #666;
+  margin: 20px 0;
 }
